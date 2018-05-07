@@ -7,7 +7,7 @@ export default class AdViewable {
    * @param {string} id The unique identifier of the position
    * @returns {Promise} Promise object representing when the operation finish
    */
-  display ({id}) {
+  display ({domElementId}) {
     throw new Error('AdViewable#display must be implemented')
   }
 
@@ -17,7 +17,7 @@ export default class AdViewable {
    * @param {segmentation} segmentation Data to be updated for the position
    * @returns {Promise} Promise object representing when the operation finish
    */
-  refresh ({id, segmentation}) {
+  refresh ({domElementId, segmentation}) {
     throw new Error('AdViewable#refresh must be implemented')
   }
 }

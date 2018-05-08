@@ -1,0 +1,43 @@
+{
+  "name": "@schibstedspain/openads-connector-api",
+  "version": "1.0.0",
+  "description": "OpenAds Interfaces to be compliant developing a new OpenAds connector",
+  "main": "dist/",
+  "scripts": {
+    "cleanDistFolder": "rm -Rf ./dist",
+    "prepublishOnly": "npm run cleanDistFolder && npm run build",
+    "build": "npm run cleanDistFolder && babel src --ignore test --out-dir dist ",
+    "lint": "sui-lint js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scm-spain/OpenAds-ConnectorApi"
+  },
+  "keywords": [
+    "openads",
+    "ads"
+  ],
+  "author": "The Mighty Ducks of Advertising",
+  "license": "ISC",
+  "devDependencies": {
+    "@s-ui/lint": "^2.7.0",
+    "babel-cli": "^6.24.0",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-sui": "1",
+    "babel-register": "^6.24.0"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "babel": {
+    "presets": [
+      "sui"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@s-ui/lint/eslintrc.js"
+    ]
+  }
+}

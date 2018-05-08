@@ -1,7 +1,7 @@
 {
   "name": "@schibstedspain/openads-connector-api",
   "version": "1.0.0",
-  "description": "OpenAds Interfaces to be compiant developing a new OpenAds connector",
+  "description": "OpenAds Interfaces to be compliant developing a new OpenAds connector",
   "main": "dist/",
   "scripts": {
     "cleanDistFolder": "rm -Rf ./dist",

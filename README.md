@@ -6,8 +6,8 @@ Compliant interfaces to be implemented to develop an OpenAds connector.
 
 All connectors should implement these methods in order to display Ads:
 
-* display: Should render an Ad into the specified dom element
-* refresh: Should update the segmentation and render the Ad from the specified dom element 
+* display: Should render an Ad 
+* refresh: Should update the Ad's data and render it 
 
 ## AdLoadable
 

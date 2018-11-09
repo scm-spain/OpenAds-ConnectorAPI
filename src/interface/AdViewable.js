@@ -7,20 +7,17 @@ export default class AdViewable {
    * @param {string} id The unique identifier of the position
    * @returns {Promise} Promise object representing when the operation finish
    */
-  display ({domElementId}) {
+  display ({id}) {
     throw new Error('AdViewable#display must be implemented')
   }
 
   /**
    * Returns and empty Promise when the refresh operation has finished
-   * @param {string} id The unique identifier of the position
-   * @param {string} placement
-   * @param {Array<Array<number,number>>} sizes
-   * @param {string} segmentation
-   * @param {Object} native - Fields requested to the ad server
+   * @param {string} id - the Ad unique identifier
+   * @param {Object} specification - Ad's connector specific data to be updated
    * @returns {Promise} Promise object representing when the operation finish
    */
-  refresh ({domElementId, placement, sizes, segmentation, native}) {
+  refresh ({id, specification}) {
     throw new Error('AdViewable#refresh must be implemented')
   }
 }

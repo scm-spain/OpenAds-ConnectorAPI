@@ -9,7 +9,7 @@ export default class AdLoadable {
    * @param {string} specification.source - connector source
    * @returns {Promise} Promise object representing when the operation finish
    */
-  loadAd ({id, specification}) {
+  loadAd({id, specification}) {
     throw new Error('AdLoadable#loadAd must be implemented')
   }
 }

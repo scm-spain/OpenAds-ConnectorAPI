@@ -7,7 +7,7 @@ export default class AdViewable {
    * @param {string} id The unique identifier of the position
    * @returns {Promise} Promise object representing when the operation finish
    */
-  display ({id}) {
+  display({id}) {
     throw new Error('AdViewable#display must be implemented')
   }
 
@@ -17,7 +17,7 @@ export default class AdViewable {
    * @param {Object} specification - Ad's connector specific data to be updated
    * @returns {Promise} Promise object representing when the operation finish
    */
-  refresh ({id, specification}) {
+  refresh({id, specification}) {
     throw new Error('AdViewable#refresh must be implemented')
   }
 }

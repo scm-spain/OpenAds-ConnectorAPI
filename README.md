@@ -1,6 +1,6 @@
 # OpenAds-ConnectorAPI
 
-![npm](https://img.shields.io/npm/v/@schibstedspain/openads-connector-api)
+![npm](https://img.shields.io/npm/v/@adv-ui/openads-connector-api)
 [![Build status](https://travis-ci.org/scm-spain/OpenAds-ConnectorAPI.svg?branch=master)](https://travis-ci.org/scm-spain/OpenAds-ConnectorAPI)
 
 Compliant interfaces to be implemented to develop an OpenAds connector.

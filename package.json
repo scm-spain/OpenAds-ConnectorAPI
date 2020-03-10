@@ -1,5 +1,5 @@
 {
-  "name": "@schibstedspain/openads-connector-api",
+  "name": "@adv-ui/openads-connector-api",
   "version": "2.0.1",
   "description": "OpenAds Interfaces to be compliant developing a new OpenAds connector",
   "main": "dist/",
@@ -28,10 +28,10 @@
     "@babel/plugin-transform-modules-commonjs": "^7.8.0",
     "@babel/register": "^7.8.0",
     "@babel/runtime": "^7.8.0",
-    "@s-ui/lint": "^3.14.0",
+    "@s-ui/lint": "3",
     "babel-loader": "^8.0.6",
     "babel-preset-sui": "^2.14.0",
-    "versiona": "^4.2.1"
+    "versiona": "4"
   },
   "pre-commit": [
     "lint"
